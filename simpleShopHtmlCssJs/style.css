@@ -1,0 +1,403 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 100px;
+  height: 100%;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  background-color: rgba(172, 172, 180, 0.33);
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+h2 {
+  border-bottom: gray solid 1px;
+  text-align: center;
+}
+
+nav {
+  background-color: rgba(0,0,0,0.2);
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-weight: bolder;
+  font-size: 0.9em;
+}
+p {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+header {
+  display: inline-block;
+  width: 100%;
+  margin-top: 0;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  background-color: #b1adb7;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+button {
+  background-color: #393939;
+  color: white;
+  border-radius: 2em;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+/*
+All pages
+ */
+.topBar {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  height: 2em;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.topBar > li {
+  position: relative;
+  float: left;
+  width: 15%;
+  height: 100%;
+}
+
+#iconLink {
+  width:30%;
+}
+
+#fillItem {
+  position: relative;
+  float: left;
+  width: 40%;
+}
+
+.topBar > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 0.3em;
+  box-sizing:border-box;
+  color: black;
+  text-decoration-line: none;
+}
+
+.topBar > li > a:hover {
+  background-color: rgba(0,0,0,0.4);
+}
+
+.navigationBar {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  height: 2em;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  padding-left: 10%;
+}
+
+/*
+the list item box for parent link
+ */
+.navigationBar > li {
+  text-align: center;
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+
+/*
+parent links
+ */
+.navigationBar > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 0.3em;
+  box-sizing:border-box;
+  color: black;
+  text-decoration-line: none;
+}
+
+.navigationBar > li > a:hover {
+  background-color: rgba(0,0,0,0.4);
+}
+
+/*
+child link
+ */
+li > a {
+  width: 100%;
+  color: black;
+  text-decoration-line: none;
+  text-align: center;
+}
+
+li > a:hover {
+  background-color: rgba(0,0,0,0.3);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: black;
+}
+
+/*
+child list
+ */
+li > ul {
+  z-index: 9999;
+  width: 100%;
+  background-color: rgb(146, 146, 146);
+  position: absolute;
+  display: none;
+  list-style: none;
+  padding: 0;
+}
+
+li > ul > li > a {
+  width: 100%;
+  height: 100%;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  display: block;
+}
+
+#imageLink {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*
+Home page
+ */
+#freeShippingImage {
+  margin-bottom: 2em;
+  padding-top: 5em;
+  width: 60%;
+}
+
+/*
+Figure for free shipping image
+ */
+figure {
+  text-align: center;
+}
+
+.hoveredClass {
+  display: block;
+}
+
+.slideShowButton {
+  text-align: center;
+  margin-top:4%;
+  padding-top:4%;
+  padding-bottom:4%;
+  float:left;
+  width: 5%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.1);
+}
+
+#imageSlideshow:hover {
+  cursor: pointer;
+}
+
+#imageSlideshow > img {
+  width: 18%;
+  float: left;
+}
+
+/*
+Basket page
+ */
+#productsHolder {
+  text-align: center;
+}
+
+#productsHolder > div > img {
+  float: inherit;
+  margin-top: 2%;
+  width: 20%;
+}
+
+#emptyButton {
+  width: 20%;
+  min-width: 4em;
+  height: 3em;
+  margin-left: 40%;
+  border-radius: 10px;
+  outline-style: none;
+}
+
+/*
+shipping form for basket page
+ */
+#shippingForm {
+  margin-bottom: 25%;
+}
+
+/*
+Form styling
+ */
+.formStyle {
+  width: 50%;
+  margin-left: 25%;
+}
+
+fieldset {
+  border-radius: 2em;
+  background-color: rgba(0,0,0,0.05);
+}
+
+legend {
+  padding-left: 2%;
+}
+
+.radioLabel {
+  width: 2em;
+}
+
+.formButton {
+  margin-top: 1em;
+  margin-left: 35%;
+}
+
+
+/*
+Label styling for all forms
+ */
+.labelClass {
+  display: inline-block;
+  width: 5em;
+}
+
+#spamEmailLabel {
+  width: 10em;
+}
+
+#addButton {
+  width: 20%;
+  min-width: 4em;
+  height: 4em;
+  margin-left: 40%;
+  margin-bottom: 5em;
+  border-radius: 10px;
+  outline-style: none;
+}
+
+/*
+Text area for customer service page
+ */
+textarea {
+  width: 90%;
+  height: 10em;
+  margin-left: 5%;
+}
+
+/*
+Select styling for customer service page
+ */
+#selectQuestion {
+  margin-left: 40%;
+}
+
+/*
+Send question button styling for customer service page
+ */
+#sendQuestionButton {
+  margin-left: 45%;
+}
+
+#customerServiceParagraph {
+  margin-bottom:10em;
+}
+
+/*
+Product div holder for shop page
+ */
+#productsDiv {
+  display: inline-block;
+  text-align: center;
+  margin-left: 16%;
+  margin-bottom: 30%;
+}
+
+#productsDiv > div {
+  display: inline-block;
+  float: left;
+  width: 25%;
+  margin: 1%;
+}
+
+#productsDiv > div > img{
+  width:100%;
+}
+
+/*
+Styling for select on shop page
+ */
+#sortType {
+  margin-left: 45%;
+}
+
+/*
+Map styling for about us page
+ */
+#map {
+  width: 90%;
+  height: 20em;
+  border: solid 1px black;
+  margin-left: 5%;
+  margin-bottom: 5em;
+}
+
+/*
+Product page
+ */
+#productImage {
+  border-style: solid;
+  border-color: #555555;
+  border-width: 0.1em;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 5%;
+}
+
+#hiddenImage {
+  visibility: hidden;
+  position: absolute;
+  width:30%;
+  right: 35%;
+  top: 13%;
+}
+
+/*
+Login form styling
+ */
+#loginForm {
+  margin-bottom: 10em;
+}

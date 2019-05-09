@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Login or sign-up">
+  <meta name="keywords" content="signup,login,form,jquery,javascript">
+  <meta name="author" content="Pontus Sandliden">
+  <meta name="generator" content="Intellij">
+  <meta name="robots" content="noindex">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="jquery.validate.min.js"></script>
+  <script src="FinalProjectJavascript.js"></script>
+  <script src="loginJavascript.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Form management with Javascript</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="topBar">
+        <li id="iconLink">
+          <a id="imageLink" href="FinalProjectHtml.html"></a>
+        </li>
+        <li id="fillItem">
+          <div></div>
+        </li>
+        <li>
+          <a id="loginLink" href="loginOrRegisterPage.html">LOGIN</a>
+        </li>
+        <li>
+          <a href="basketHtml.html">BASKET</a>
+        </li>
+      </ul>
+      <ul class="navigationBar">
+        <li>
+          <a href="FinalProjectHtml.html">HOME</a>
+        </li>
+        <li>
+          <a id="shopLink" href="ShopHtml.html">SHOP</a>
+          <ul>
+            <li><a id="decorationLink" href="ShopHtml.html">DECORATION</a></li>
+            <li><a id="fruitLink" href="ShopHtml.html">FRUITS</a></li>
+            <li><a id="mugLink" href="ShopHtml.html">MUGS</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="aboutHtml.html">ABOUT US</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <article id="loginArticle">
+    <h1>Login or sign-up</h1>
+    <form id="signupForm" class="formStyle">
+      <fieldset>
+        <legend>Sign-up</legend>
+        <div>
+          <label class="labelClass" for="usernameField">Username: </label>
+          <input type="text" name="username" id="usernameField" placeholder="Username" class="required"><br>
+        </div>
+        <div>
+          <label class="labelClass" for="passwordField">Password: </label>
+          <input type="password" name="password" id="passwordField" placeholder="Password" class="required"><br>
+        </div>
+        <div>
+          <label class="labelClass" for="repeatPasswordField">Password: </label>
+          <input type="password" name="password" id="repeatPasswordField" placeholder="Password" class="required"><br>
+        </div>
+        <div>
+          <label class="labelClass" for="firstNameField">First name: </label>
+          <input type="text" name="firstName" id="firstNameField" placeholder="First name"><br>
+        </div>
+        <div>
+          <label class="labelClass" for="lastNameField">Last name: </label>
+          <input type="text" name="lastName" id="lastNameField" placeholder="Last name"><br>
+        </div>
+        <div>
+          <label class="labelClass" for="emailField">Email: </label>
+          <input type="email" name="email" id="emailField" placeholder="Email" class="required"><br>
+        </div>
+        <div>
+          <label id="spamEmailLabel" for="yesRadio">Want emails about new products? </label>
+          <input type="radio" id="yesRadio" value="Yes" name="subscribe" checked>
+          <label class="radioLabel" for="noRadio">Yes</label>
+
+          <input type="radio" id="noRadio" value="No" name="subscribe">
+          <label class="radioLabel" for="noRadio">No</label>
+        </div>
+        <input id="signupButton" class="formButton" type="submit" value="Sign-up">
+      </fieldset>
+    </form>
+    <form id="loginForm" class="formStyle">
+      <fieldset>
+        <legend>Login</legend>
+        <div>
+          <label class="labelClass" for="usernameField">Username: </label>
+          <input type="text" name="username" id="loginUsernameField" placeholder="Username" class="required"><br>
+        </div>
+        <div>
+          <label class="labelClass" for="passwordField">Password: </label>
+          <input type="password" name="password" id="loginPasswordField" placeholder="Password" class="required"><br>
+        </div>
+        <input id="loginButton" class="formButton" type="submit" value="Login">
+      </fieldset>
+    </form>
+  </article>
+  <footer>
+    <p>
+      This website was created by Pontus Sandliden in 2018. <br>
+      To learn more please visit <a href="aboutHtml.html">About Us</a>.<br>
+      If you have any further questions please contact us at contact@PontusOnlineShop.com or by using our on website message service <a href="customerServiceHtml.html">here</a>.
+    </p>
+  </footer>
+</body>
+</html>

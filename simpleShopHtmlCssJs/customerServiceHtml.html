@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Customer Service">
+  <meta name="keywords" content="customer,service,contact,complaints">
+  <meta name="author" content="Pontus Sandliden">
+  <meta name="generator" content="Intellij">
+  <meta name="robots" content="noindex">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="FinalProjectJavascript.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Online Shop Basket</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="topBar">
+        <li id="iconLink">
+          <a id="imageLink" href="FinalProjectHtml.html"></a>
+        </li>
+        <li id="fillItem">
+          <div></div>
+        </li>
+        <li>
+          <a id="loginLink" href="loginOrRegisterPage.html">LOGIN</a>
+        </li>
+        <li>
+          <a href="basketHtml.html">BASKET</a>
+        </li>
+      </ul>
+      <ul class="navigationBar">
+        <li>
+          <a href="FinalProjectHtml.html">HOME</a>
+        </li>
+        <li>
+          <a id="shopLink" href="ShopHtml.html">SHOP</a>
+          <ul>
+            <li><a id="decorationLink" href="ShopHtml.html">DECORATION</a></li>
+            <li><a id="fruitLink" href="ShopHtml.html">FRUITS</a></li>
+            <li><a id="mugLink" href="ShopHtml.html">MUGS</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="aboutHtml.html">ABOUT US</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <article>
+    <h1>Customer service</h1>
+    <p>Please choose the most fitting category for your customer service request and enter your message.</p>
+    <form>
+      <select id="selectQuestion" name="General Questions">
+        <optgroup label="Standard">
+          <option value="How">Purchase question</option>
+          <option value="Basicplus">Delivery question</option>
+        </optgroup>
+        <optgroup label="Complaints">
+          <option value="luxury">Damaged product</option>
+          <option value="ultimate">Missing product</option>
+          <option value="ultimate">Payment issue</option>
+        </optgroup>
+        <optgroup label="Feedback">
+          <option value="luxury">Product feedback</option>
+          <option value="ultimate">Delivery feedback</option>
+        </optgroup>
+      </select><br>
+      <textarea>
+
+      </textarea><br>
+      <input id="sendQuestionButton" type="submit" value="Send">
+    </form>
+    <h2>Alternative contact</h2>
+    <p id="customerServiceParagraph">Customer Service phone nr: 0700000000<br>
+      Customer service email: CustomerSerivce@PontusOnlineShop.com
+    </p>
+  </article>
+  <footer>
+    <p>
+      This website was created by Pontus Sandliden in 2018. <br>
+      To learn more please visit <a href="aboutHtml.html">About Us</a>.<br>
+      If you have any further questions please contact us at contact@PontusOnlineShop.com or by using our on website message service <a href="customerServiceHtml.html">here</a>.
+    </p>
+  </footer>
+</body>
+</html>

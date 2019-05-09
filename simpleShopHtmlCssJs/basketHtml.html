@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Basket page">
+  <meta name="keywords" content="basket,shop,products,buy,pay,now,transport,shipping">
+  <meta name="author" content="Pontus Sandliden">
+  <meta name="generator" content="Intellij">
+  <meta name="robots" content="noindex">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="FinalProjectJavascript.js"></script>
+  <script src="basketJavascript.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Online Shop Basket</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="topBar">
+        <li id="iconLink">
+          <a id="imageLink" href="FinalProjectHtml.html"></a>
+        </li>
+        <li id="fillItem">
+          <div></div>
+        </li>
+        <li>
+          <a id="loginLink" href="loginOrRegisterPage.html">LOGIN</a>
+        </li>
+        <li>
+          <a href="basketHtml.html">BASKET</a>
+        </li>
+      </ul>
+      <ul class="navigationBar">
+        <li>
+          <a href="FinalProjectHtml.html">HOME</a>
+        </li>
+        <li>
+          <a id="shopLink" href="ShopHtml.html">SHOP</a>
+          <ul>
+            <li><a id="decorationLink" href="ShopHtml.html">DECORATION</a></li>
+            <li><a id="fruitLink" href="ShopHtml.html">FRUITS</a></li>
+            <li><a id="mugLink" href="ShopHtml.html">MUGS</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="aboutHtml.html">ABOUT US</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <article>
+    <h1>Your basket</h1>
+    <button id="emptyButton">Empty basket</button>
+    <div id="productsHolder">
+
+    </div>
+    <p id="totalDisplay"></p>
+    <form class="formStyle" id="shippingForm">
+      <fieldset>
+        <legend>Shipping information</legend>
+        <div>
+          <label class="labelClass" for="nameInput">Full Name: </label>
+          <input type="text" name="fullName" id="nameInput" placeholder="Full Name" class="required"><br>
+          <label class="labelClass" for="addressInput">Address: </label>
+          <input type="text" name="DeliveryAddress" id="addressInput" placeholder="Address" class="required"><br>
+          <label class="labelClass" for="address2Input">Address 2: </label>
+          <input type="text" name="DeliveryAddress" id="address2Input" placeholder="Address" class="required"><br>
+          <label class="labelClass" for="CityInput">City: </label>
+          <input type="text" name="City" id="CityInput" placeholder="City" class="required"><br>
+          <label class="labelClass" for="postCodeInput">Post Code: </label>
+          <input type="text" name="PostCode" id="postCodeInput" placeholder="Post Code" class="required"><br>
+          <label class="labelClass" for="countryInput">Country: </label>
+          <input type="text" name="Country" id="countryInput" placeholder="Country" class="required"><br>
+        </div>
+        <input class="formButton" type="submit" id="loginButton" value="Go to payment">
+      </fieldset>
+    </form>
+  </article>
+  <footer>
+    <p>
+      This website was created by Pontus Sandliden in 2018. <br>
+      To learn more please visit <a href="aboutHtml.html">About Us</a>.<br>
+      If you have any further questions please contact us at contact@PontusOnlineShop.com or by using our on website message service <a href="customerServiceHtml.html">here</a>.
+    </p>
+  </footer>
+</body>
+</html>
